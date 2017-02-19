@@ -12,20 +12,11 @@
   (.json res
          (hello-world)))
 
-(defn foo
-  "Multiplies two numbers"
-  [x y]
-  (+  x y))
-
-(defn my-add
-  [a b]
-  (+ a b))
-
 (defn add-handler
   "Return foo"
   [req res]
-  (.json res (clj->js {:result (my-add (int (aget req "query" "x"))
-                                       (int (aget req "query" "y")))})))
+  (.json res (clj->js {:result (+ (int (aget req "query" "x"))
+                                  (int (aget req "query" "y")))})))
 
 (defn -main []
   (let [app (express)]

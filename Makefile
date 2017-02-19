@@ -1,9 +1,9 @@
 .PHONY: autobuild nodemon
 
-autobuild:
+watch:
 	lein cljsbuild auto dev
 
-nodemon:
+watch-node:
 	nodemon out/server.js
 
 clean:
