@@ -9,8 +9,7 @@
   :dependencies [[org.clojure/clojure "1.8.0"]
                  [org.clojure/clojurescript "1.9.473"]
                  [org.clojure/core.async "0.2.395"
-                  :exclusions [org.clojure/tools.reader]]
-                 [io.nervous/kvlt "0.1.4"]]
+                  :exclusions [org.clojure/tools.reader]]]
 
   :plugins [[lein-cljsbuild "1.1.5" :exclusions [[org.clojure/clojure]]]]
 
