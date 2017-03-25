@@ -6,3 +6,8 @@
   "Starts cljs nrepl."
   []
   (cemerick.piggieback/cljs-repl (cljs.repl.node/repl-env)))
+
+(defn stop-cljs
+  "Stops cljs repl (only usable in cljs)"
+  []
+  :cljs/quit)
